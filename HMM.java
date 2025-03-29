@@ -7,7 +7,6 @@ import java.util.*;
 /**
  * @author Chipo Chibbamulilo
  * @author Chikwanda Chisha
- * writing code for the training part of the assignment
  * Building the HMM model by reading from files and inputing
  * data and scores in maps
  */
@@ -413,9 +412,9 @@ public class HMM {
 
 
     public static void main(String[] args) throws IOException {
-        HMM testing=new HMM("PSET5/brown-train-sentences.txt","PSET5/brown-train-tags.txt");
-        testing.reading("PSET5/simple-test-sentences.txt");
-        testing.compareTags("PSET5/simple-test-sentences.txt","PSET5/simple-test-tags.txt");
+        HMM testing=new HMM("brown-train-sentences.txt","brown-train-tags.txt");
+        testing.reading("simple-train-sentences.txt");
+        testing.compareTags("simple-train-sentences.txt","simple-train-tags.txt");
         testing.wordType();
 
 
